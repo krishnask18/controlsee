@@ -59,7 +59,7 @@ function Menubar(){
                     <Button
                         className="li" 
                         onClick={()=>{
-                            window.location.href = '/feed'
+                            window.location.href = '/'
                         }}
                         style={{
                             background : "#233731"

@@ -96,7 +96,7 @@ function App() {
           element={<Profile/>}
         />
         <Route 
-          path='/ask/'
+          path='/ask'
           element={<Ask/>}
         />
       </Routes>

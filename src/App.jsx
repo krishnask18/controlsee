@@ -40,29 +40,26 @@ function App() {
       </div>
     )
   }
-  useEffect(()=>{
-    async function fetchdata(){
-      var usr = await fetch('https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/profile', {
-        method : 'GET',
-        credentials : 'include',
-        mode : 'cors',
-      })
-      console.log(User['name']);
-      if(usr == {}){
-        setUser({})
-      }
-      else {
-        usr = await usr.json()
-        setUser(usr)
-      }
-    } 
-    if (effectRan.current === true) {
-      // your logic
-      fetchdata()
+  async function fetchdata(){
+    var usr = await fetch('https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/profile', {
+      method : 'GET',
+      credentials : 'include',
+      mode : 'cors',
+    })
+    console.log(User['name']);
+    if(usr == {}){
+      setUser({})
     }
-    return () => {
-      effectRan.current = true;
-    };
+    else {
+      usr = await usr.json()
+      setUser(usr)
+    }
+  } 
+  useEffect(()=>{
+    if (effectRan.current === true) return;
+  
+    effectRan.current = true;
+    fetchdata()
   }, [])
   return (
     <BrowserRouter>

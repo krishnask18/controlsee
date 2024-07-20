@@ -56,7 +56,13 @@ function App() {
         setUser(usr)
       }
     } 
-    fetchdata()
+    if (effectRan.current === true) {
+      // your logic
+      fetchdata()
+    }
+    return () => {
+      effectRan.current = true;
+    };
   }, [])
   return (
     <BrowserRouter>

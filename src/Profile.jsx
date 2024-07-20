@@ -5,7 +5,7 @@ function Profile(){
     usr = usr[usr.length-1]
     const [info, setinfo] = useState("")
     async function fetchdata(){
-        var data = await fetch('http://localhost:3000/userpage', {
+        var data = await fetch('https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/userpage', {
             headers: {
               'Accept': 'application/json',
               'Content-Type': 'application/json'

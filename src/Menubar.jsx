@@ -90,14 +90,14 @@ function Menubar(){
                     <Button
                         className="li" 
                         onClick={async ()=>{
-                            var usr = await fetch('http://localhost:3000/profile', {
+                            var usr = await fetch('https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/profile', {
                                 method : 'GET',
                                 credentials : 'include',
                                 mode : 'cors',
                             })
                             usr = await usr.json()
                             const name = usr['name']
-                            window.location.href = name ? '/profile/'+encodeURIComponent(name) : 'http://localhost:3000?rqst='+encodeURIComponent("http://localhost:5173/feed")
+                            window.location.href = name ? '/profile/'+encodeURIComponent(name) : 'https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app?rqst='+encodeURIComponent("http://localhost:5173/feed")
                         }}
                         style={{
                             background : "#233731"

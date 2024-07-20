@@ -22,7 +22,7 @@ function App() {
     }}
     startIcon = {<FcGoogle/>}
     onClick={()=>{
-          window.location.href = 'http://localhost:3000?rqst='+encodeURIComponent(window.location.href) // window.location.href
+          window.location.href = 'https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app?rqst='+encodeURIComponent(window.location.href) // window.location.href
         }
       }
   >Sign in</Button>
@@ -42,7 +42,7 @@ function App() {
   }
   useEffect(()=>{
     async function fetchdata(){
-      var usr = await fetch('http://localhost:3000/profile', {
+      var usr = await fetch('https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/profile', {
         method : 'GET',
         credentials : 'include',
         mode : 'cors',

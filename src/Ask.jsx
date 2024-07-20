@@ -55,7 +55,7 @@ function Ask(){
             "desc":Description,
             "code":Code
         }
-        var usr = await fetch('http://localhost:3000/profile', {
+        var usr = await fetch('https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/profile', {
             method : 'GET',
             credentials : 'include',
             mode : 'cors',
@@ -64,7 +64,7 @@ function Ask(){
         try {
             const email = usr['email']
             data['email'] = email
-            var resp = await fetch("http://localhost:3000/ques", {
+            var resp = await fetch("https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/ques", {
                 headers: {
                   'Accept': 'application/json',
                   'Content-Type': 'application/json'
@@ -74,7 +74,7 @@ function Ask(){
                 body: JSON.stringify(data)
             })
         } catch(e) {
-            window.location.href = 'http://localhost:3000?rqst='+encodeURIComponent(window.location.href) // window.location.href
+            window.location.href = 'https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app?rqst='+encodeURIComponent(window.location.href) // window.location.href
         }
         cookies.remove('title')
         cookies.remove('desc')

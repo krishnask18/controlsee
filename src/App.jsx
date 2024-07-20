@@ -9,6 +9,8 @@ import { useState, useEffect } from 'react';
 import Menubar from './Menubar'
 import Ask from './Ask'
 
+const effectRan = useRef(false)
+
 function App() {
   var [User, setUser] = useState({name:""})
   const loginButton = 

@@ -12,45 +12,14 @@ function Menubar(){
     const iconsize = "30px"
     const fontsize = "22.5px"
     const fontcolor = "#8cb89b"
-    const div_ = <div
-    style={{
-        height:"50px"
-    }}>
-        <Button
-            className="li" 
-            onClick={()=>{
-                cookies.remove('PUERTOPONDICKMANNSON')
-                window.location.href = window.location.href
-            }}
-            style={{
-                background : "#233731"
-            }}
-            startIcon={
-                <RiLogoutBoxRLine 
-                style={{
-                    fontSize:iconsize,
-                    position:'relative',
-                    color:fontcolor,
-                }}
-                />}>
-            <p
-            style={{
-                fontSize:fontsize,
-                position:'relative',
-                top:"1px",
-                color:fontcolor
-            }}>
-                logout 
-            </p>
-        </Button>
-    </div> 
-    const [lgt, setlgt] = useState(false)
-    useEffect(()=>{
-        console.log(cookies.get('PUERTOPONDICKMANNSON'));
-        setlgt(
-            cookies.get('PUERTOPONDICKMANNSON')!=undefined
-        )
-    }, [])
+    // const div_ = 
+    // const [lgt, setlgt] = useState(false)
+    // useEffect(()=>{
+    //     console.log(cookies.get('PUERTOPONDICKMANNSON'));
+    //     setlgt(
+    //         cookies.get('PUERTOPONDICKMANNSON')!=undefined
+    //     )
+    // }, [])
     return (
         <div
             className="listparent"
@@ -158,9 +127,38 @@ function Menubar(){
                         </p>
                     </Button>
                 </div>
-                {
-                    lgt ? div_ : <>hi</>
-                }
+                <div
+                style={{
+                    height:"50px"
+                }}>
+                    <Button
+                        className="li" 
+                        onClick={()=>{
+                            cookies.remove('PUERTOPONDICKMANNSON')
+                            window.location.href = window.location.href
+                        }}
+                        style={{
+                            background : "#233731"
+                        }}
+                        startIcon={
+                            <RiLogoutBoxRLine 
+                            style={{
+                                fontSize:iconsize,
+                                position:'relative',
+                                color:fontcolor,
+                            }}
+                            />}>
+                        <p
+                        style={{
+                            fontSize:fontsize,
+                            position:'relative',
+                            top:"1px",
+                            color:fontcolor
+                        }}>
+                            logout 
+                        </p>
+                    </Button>
+                </div> 
             </div>
         </div>
     )

@@ -8,7 +8,9 @@ import { FcGoogle } from "react-icons/fc";
 import { useState, useEffect } from 'react';
 import Menubar from './Menubar'
 import Ask from './Ask'
+import Cookies from 'universal-cookie'
 
+const cookies = new Cookies()
 
 function App() {
   var [User, setUser] = useState({name:""})
@@ -44,7 +46,11 @@ function App() {
   async function fetchdata(){
     var usr = await fetch('https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/profile', {
       method : 'GET',
-      credentials : 'include',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({'PUERTOPONDICKMANNSON':cookies.get('PUERTOPONDICKMANNSON')}),
       mode : 'cors',
     })
     console.log("usrdata before: ");

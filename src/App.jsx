@@ -44,8 +44,8 @@ function App() {
   async function fetchdata(){
     var usr = await fetch('https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/profile', {
       method : 'GET',
-      // credentials : 'include',
-      // mode : 'cors',
+      credentials : 'include',
+      mode : 'cors',
     })
     if(usr == {}){
       setUser({})
@@ -53,7 +53,7 @@ function App() {
     else {
       usr = await usr.json()
       console.log("usrdata : ");
-      console.log(usr['name']);
+      console.log(usr);
       setUser(usr)
     }
   } 

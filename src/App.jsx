@@ -48,7 +48,7 @@ function App() {
       mode : 'cors',
     })
     console.log("usrdata before: ");
-    console.log(usr);
+    console.log(usr.response);
     usr = await usr.json()
     console.log("usrdata : ");
     console.log(usr);

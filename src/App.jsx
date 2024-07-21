@@ -44,8 +44,8 @@ function App() {
   async function fetchdata(){
     const usr = await fetch('https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/profile', {
       method : 'GET',
-      // credentials : 'include',
-      // mode : 'cors',
+      credentials : 'include',
+      mode : 'cors',
     })
     console.log("usrdata before: ");
     console.log(usr);

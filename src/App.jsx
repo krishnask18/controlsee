@@ -47,13 +47,15 @@ function App() {
       credentials : 'include',
       mode : 'cors',
     })
+    console.log("usrdata before: ");
+    console.log(usr);
     usr = await usr.json()
+    console.log("usrdata : ");
+    console.log(usr);
     if(usr == {}){
       setUser({})
     }
     else {
-      console.log("usrdata : ");
-      console.log(usr);
       setUser(usr)
     }
   } 

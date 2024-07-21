@@ -57,9 +57,7 @@ function App() {
     }
   } 
   useEffect(()=>{
-    if (effectRan.current === true) return;
-  
-    effectRan.current = true;
+    console.log("func ran");
     fetchdata()
   }, [])
   return (

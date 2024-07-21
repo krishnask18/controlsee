@@ -45,7 +45,7 @@ function App() {
   }
   async function fetchdata(){
     var usr = await fetch('https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/profile', {
-      method : 'GET',
+      method : 'POST',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'

@@ -42,21 +42,21 @@ function App() {
     )
   }
   async function fetchdata(){
-    var usr = await fetch('https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/profile', {
+    const usr = await fetch('https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/profile', {
       method : 'GET',
-      credentials : 'include',
-      mode : 'cors',
+      // credentials : 'include',
+      // mode : 'cors',
     })
     console.log("usrdata before: ");
     console.log(usr);
-    usr = await usr.json()
+    const ax = await usr.json()
     console.log("usrdata : ");
-    console.log(usr);
-    if(usr == {}){
+    console.log(ax);
+    if(ax == {}){
       setUser({})
     }
     else {
-      setUser(usr)
+      setUser(ax)
     }
   } 
   useEffect(()=>{

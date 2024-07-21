@@ -46,8 +46,9 @@ function Menubar(){
     </div> 
     const [lgt, setlgt] = useState(false)
     useEffect(()=>{
+        console.log(cookies.get('PUERTOPONDICKMANNSON'));
         setlgt(
-            cookies.get('PUERTOPONDICKMANNSON') ? true : false
+            cookies.get('PUERTOPONDICKMANNSON')!=undefined
         )
     }, [])
     return (

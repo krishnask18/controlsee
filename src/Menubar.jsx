@@ -1,5 +1,5 @@
 import { Button, Menu } from "@mui/material";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { LuHome } from "react-icons/lu";
 import { FaRegUser } from "react-icons/fa";
 import { FaQuestion  } from "react-icons/fa";
@@ -12,8 +12,10 @@ function Menubar(){
     const iconsize = "30px"
     const fontsize = "22.5px"
     const fontcolor = "#8cb89b"
-    const lgt = 
-    <div
+    const [lgt, setlgt] = useState("")
+    useEffect(()=>{
+        setlgt(
+            cookies.get('PUERTOPONDICKMANNSON') ? <div
     style={{
         height:"50px"
     }}>
@@ -44,7 +46,9 @@ function Menubar(){
                 logout 
             </p>
         </Button>
-    </div>
+    </div> : <></>
+        )
+    })
     return (
         <div
             className="listparent"
@@ -153,7 +157,7 @@ function Menubar(){
                     </Button>
                 </div>
                 {
-                    cookies.get('PUERTOPONDICKMANNSON') ? lgt : <></>
+                    lgt
                 }
             </div>
         </div>

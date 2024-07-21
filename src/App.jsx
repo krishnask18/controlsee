@@ -52,7 +52,7 @@ function App() {
     }
     else {
       usr = await usr.json()
-      console.log(usr);
+      console.log(usr['name']);
       setUser(usr)
     }
   } 

@@ -52,12 +52,12 @@ function App() {
     }
     else {
       usr = await usr.json()
+      console.log("usrdata : ");
       console.log(usr['name']);
       setUser(usr)
     }
   } 
   useEffect(()=>{
-    console.log("func ran");
     fetchdata()
   }, [])
   return (

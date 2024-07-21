@@ -12,10 +12,7 @@ function Menubar(){
     const iconsize = "30px"
     const fontsize = "22.5px"
     const fontcolor = "#8cb89b"
-    const [lgt, setlgt] = useState("")
-    useEffect(()=>{
-        setlgt(
-            cookies.get('PUERTOPONDICKMANNSON') ? <div
+    const div_ = <div
     style={{
         height:"50px"
     }}>
@@ -46,9 +43,13 @@ function Menubar(){
                 logout 
             </p>
         </Button>
-    </div> : <></>
+    </div> 
+    const [lgt, setlgt] = useState(false)
+    useEffect(()=>{
+        setlgt(
+            cookies.get('PUERTOPONDICKMANNSON') ? true : false
         )
-    })
+    }, [])
     return (
         <div
             className="listparent"
@@ -157,7 +158,7 @@ function Menubar(){
                     </Button>
                 </div>
                 {
-                    lgt
+                    lgt ? div_ : <></>
                 }
             </div>
         </div>

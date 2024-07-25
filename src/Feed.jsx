@@ -12,6 +12,7 @@ function Feed(){
         console.log(usr);
     }
     useEffect(()=>{
+        console.log("feed here");
         fetchdata()
     }, [])
     return(

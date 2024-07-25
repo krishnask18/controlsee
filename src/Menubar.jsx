@@ -72,7 +72,7 @@ function Menubar(){
                             })
                             usr = await usr.json()
                             const name = usr['name']
-                            window.location.href = name ? '/profile/'+encodeURIComponent(name) : 'https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app?rqst='+encodeURIComponent(window.location.href)
+                            window.location.href = name ? '/profile/'+encodeURIComponent(name) : 'https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app?rqst='+encodeURIComponent('https://controlsee-git-main-krishnas-projects-e88a8c5b.vercel.app/')
                         }}
                         style={{
                             background : "#233731"

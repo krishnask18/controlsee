@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import App from "./App";
 
 function Feed(){
-    const [lst, setlst] = useState('')
+    const [lst, setlst] = useState('asdf')
     async function fetchdata(){
         const usr = await fetch('https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/feed', {
             method : 'GET',

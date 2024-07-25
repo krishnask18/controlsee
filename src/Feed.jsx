@@ -12,7 +12,7 @@ function Feed(){
             },
         })
         usr = await usr.json()
-        setlst(usr['data'][0])
+        setlst("done")
         console.log(usr);
     }
     window.onload=()=>{

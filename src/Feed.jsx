@@ -6,8 +6,10 @@ function Feed(){
     async function fetchdata(){
         const usr = await fetch('https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/feed', {
             method : 'GET',
-            credentials : 'include',
-            mode : 'cors',
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
         })
         usr = await usr.json()
         setlst(usr['data'][0])
@@ -17,10 +19,10 @@ function Feed(){
         console.log("feed here");
         fetchdata()
     }
-    // useEffect(()=>{
-    //     console.log("feed here");
-    //     fetchdata()
-    // }, [])
+    useEffect(()=>{
+        console.log("feed here");
+        fetchdata()
+    }, [])
     return(
         <div>
             Feed

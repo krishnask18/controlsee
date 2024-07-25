@@ -92,7 +92,7 @@ function App() {
         <Menubar/>
       <Routes>
         <Route 
-          path='/'
+          path='/feed/'
           element={<Feed/>}
         />
         <Route 

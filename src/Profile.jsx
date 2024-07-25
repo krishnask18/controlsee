@@ -14,6 +14,7 @@ function Profile(){
             body: JSON.stringify({"name":usr})
         })
         data = await data.json()
+        console.log("object");
         if(data['name'] == undefined || data['name'] != usr){
         }
         else {

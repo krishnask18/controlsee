@@ -15,17 +15,16 @@ function Feed(){
         setlst("done")
         console.log(usr);
     }
-    window.onload=()=>{
-        console.log("feed here");
-        fetchdata()
-    }
-    useEffect(()=>{
-        console.log("feed here");
-        fetchdata()
-    }, [])
+    // window.onload=()=>{
+    //     console.log("feed here");
+    //     fetchdata()
+    // }
+    // useEffect(()=>{
+    //     console.log("feed here");
+    //     fetchdata()
+    // }, [])
     return(
         <div>
-            Feed
             {lst}
          </div>
     )

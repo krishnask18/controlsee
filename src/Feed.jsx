@@ -17,11 +17,11 @@ function Feed(){
     }
     // window.onload=()=>{
     //     console.log("feed here");
-    //     fetchdata()
+    //     loadata()
     // }
     useEffect(()=>{
         console.log("feed here");
-        fetchdata()
+        loadata()
     }, [])
     return(
         <div>

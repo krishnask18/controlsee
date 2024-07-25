@@ -13,10 +13,14 @@ function Feed(){
         setlst(usr['data'][0])
         console.log(usr);
     }
-    useEffect(()=>{
+    window.onload=()=>{
         console.log("feed here");
         fetchdata()
-    }, [])
+    }
+    // useEffect(()=>{
+    //     console.log("feed here");
+    //     fetchdata()
+    // }, [])
     return(
         <div>
             Feed

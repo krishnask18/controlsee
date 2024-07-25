@@ -14,7 +14,7 @@ function Profile(){
             body: JSON.stringify({"name":usr})
         })
         data = await data.json()
-        if(data['name'] == undefined){
+        if(data['name'] == undefined || data['name'] == usr){
         }
         else {
           setinfo(data['name'])

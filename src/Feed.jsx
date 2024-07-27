@@ -12,23 +12,22 @@ function Feed(){
             },
         })
         usr = await usr.json()
+        var mapped = usr.data.map((qsn, index)=>{
+            <div>
+                {qsn['title']}
+            </div>
+        })
         setlst(
             <div
             style={{
                 background:"red"
             }}>
-                HELLO HELLO
                 {
-                // usr.data.map((qsn, index)=>{
-                //     <div>
-                //         {/* {qsn['title']} */}
-                //         {index}
-                //     </div>
-                // })
+                    mapped
                 }
             </div>
         )
-        usr.data.map((q, i)=>{console.log(q);})
+        usr.data.map((q, i)=>{console.log(q['title']);})
     }
     // window.onload=()=>{
     //     console.log("feed here");

@@ -12,7 +12,7 @@ function Feed(){
             },
         })
         usr = await usr.json()
-        var divlist = document.createElement('ul')
+        var divlist = document.createElement('li')
         usr.data.map((qsn, index)=>{
             divlist.appendChild(
                 <div>

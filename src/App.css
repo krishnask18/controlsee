@@ -212,12 +212,12 @@
 .innerlist {
   position: absolute;
   /* left: 5px; */
-  left: 275px;
-  right: 5px;
-  top: 5px;
-  bottom: 5px;
+  left: 285px;
+  right: 15px;
+  top: 15px;
+  bottom: 15px;
   background: rgba(215, 255, 235, 0.1);
-  border-radius: 7px;
+  border-radius: 10px;
 }
 
 .qlist {

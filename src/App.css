@@ -215,7 +215,7 @@
   left: 285px;
   right: 15px;
   top: 15px;
-  bottom: 15px;
+  /* bottom: 15px; */
   background: rgba(215, 255, 235, 0.1);
   border-radius: 10px;
 }
@@ -223,7 +223,7 @@
 .qlist {
   position: absolute;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   left: 0px;
   right: 0px;
   z-index: -1;

@@ -14,8 +14,7 @@ function Feed(){
         usr = await usr.json()
         var divlist = document.createElement('li')
         usr.data.map((qsn, index)=>{
-            var z = document.createElement('div'); // is a node
-            z.innerHTML = qsn['title'];
+            var z = document.createTextNode(qsn['title']); // is a node
             divlist.appendChild(z)
         })
         setlst(

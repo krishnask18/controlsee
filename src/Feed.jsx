@@ -12,11 +12,11 @@ function Feed(){
             },
         })
         usr = await usr.json()
-        var divlist = <ul>
+        var divlist = <div>
             {usr.data.map((item) => (
-            <li >{item['title']}</li>
-            ))}
-        </ul>
+            <div >{item['title']}</div>
+            ))} 
+        </div>
         setlst(
             <div 
             style={{

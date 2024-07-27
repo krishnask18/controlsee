@@ -210,6 +210,16 @@
 }
 
 .innerlist {
+  /* left: 270px;
+  right: 0px;
+  top: 65px;
+  bottom: 0px; */
+  background: #2c3e32;
+}
+
+.qlist {
+  position: absolute;
+  width: 600px;
   left: 270px;
   right: 0px;
   top: 65px;

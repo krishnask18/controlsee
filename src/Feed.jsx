@@ -181,12 +181,12 @@ function Feed(){
             // 'asdf',
         ]
         divlist = <div className="innerlist">
-            {dta.map((item, index) => (
+            {usr.data.map((item, index) => (
         <div className="tile" 
         // style={{height:"30px", background:"yellow"}}
         >
             <div className="intile">
-                {item} at {index}
+                {item['title']}
             </div>
         </div>
         ))} 

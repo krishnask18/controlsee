@@ -215,10 +215,9 @@
   left: 285px;
   right: 15px;
   top: 15px;
-  /* bottom: 15px; */
+  bottom: 15px;
   background: rgba(215, 255, 235, 0.1);
   border-radius: 10px;
-  overflow-y: scroll;
 }
 
 .qlist {
@@ -230,5 +229,6 @@
   top: 65px;
   bottom: 0px;
   border-radius: 7px;
+  overflow-y: scroll;
   /* background: #293934; */
 }

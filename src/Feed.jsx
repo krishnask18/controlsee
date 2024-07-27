@@ -28,18 +28,11 @@ function Feed(){
         )
         usr.data.map((q, i)=>{console.log(q['title']);})
     }
-    // window.onload=()=>{
-    //     console.log("feed here");
-    //     loadata()
-    // }
     useEffect(()=>{
-        console.log("feed here");
         loadata()
     }, [])
     return(
-        <div>
-            {lst}
-         </div>
+        lst
     )
 }
 

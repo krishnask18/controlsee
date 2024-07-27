@@ -212,5 +212,6 @@
 .qlist {
   left: 270px;
   right: 0px;
+  height: 100%;
   background: #2c3e32;
 }

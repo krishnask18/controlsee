@@ -12,13 +12,7 @@ function Feed(){
             },
         })
         usr = await usr.json()
-        var divlist = <div
-            className="qlist"
-            style={{
-                background:"red"
-            }}
-        >
-        </div>
+        var divlist = document.createElement('ul')
         usr.data.map((qsn, index)=>{
             document.getElementsByClassName('qlist').appendChild(
                 <div>

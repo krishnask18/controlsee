@@ -235,6 +235,10 @@
 
 .tile{
   height: 40px;
+}
+.intile{
+  height: 35px;
   border-radius: 7px;
   background-color: #1a9660;
+
 }

@@ -12,18 +12,27 @@ function Feed(){
             },
         })
         usr = await usr.json()
-        var mapped = usr.data.map((qsn, index)=>{
-            <div>
+        var divlist = <div
+            className="qlist"
+            style={{
+                background:"red"
+            }}
+        >
+        </div>
+        usr.data.map((qsn, index)=>{
+            document.getElementsByClassName('qlist').appendChild(
+                <div>
                 {qsn['title']}
             </div>
+            )
         })
         setlst(
-            <div
+            <div 
             style={{
                 background:"red"
             }}>
                 {
-                    mapped
+                    divlist
                 }
             </div>
         )

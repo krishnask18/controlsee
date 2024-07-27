@@ -211,7 +211,8 @@
 
 .innerlist {
   position: relative;
-  left: 5px;
+  /* left: 5px; */
+  left: 270px;
   right: 5px;
   top: 5px;
   bottom: 5px;
@@ -222,11 +223,11 @@
 .qlist {
   position: absolute;
   width: 100%;
-  left: 270px;
-  right: 270px;
+  /* left: 270px; */
+  /* right: 270px; */
   z-index: -1;
   top: 65px;
   bottom: 0px;
   border-radius: 7px;
-  background: #293934;
+  /* background: #293934; */
 }

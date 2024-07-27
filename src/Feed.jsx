@@ -14,7 +14,7 @@ function Feed(){
         usr = await usr.json()
         var divlist = document.createElement('ul')
         usr.data.map((qsn, index)=>{
-            document.getElementsByClassName('qlist').appendChild(
+            divlist.appendChild(
                 <div>
                 {qsn['title']}
             </div>

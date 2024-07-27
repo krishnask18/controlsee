@@ -234,10 +234,12 @@
 }
 
 .tile{
+  position: relative;
   height: 40px;
 }
 .intile{
-  height: 35px;
+  position: relative;
+  bottom: 5px;
   border-radius: 7px;
   background-color: #1a9660;
 

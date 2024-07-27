@@ -184,7 +184,11 @@ function Feed(){
             {dta.map((item, index) => (
         <div className="tile" 
         // style={{height:"30px", background:"yellow"}}
-        >{item} at {index}</div>
+        >
+            <div className="intile">
+                {item} at {index}
+            </div>
+        </div>
         ))} 
         </div>
         setlst(

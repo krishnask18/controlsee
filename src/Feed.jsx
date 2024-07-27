@@ -12,11 +12,12 @@ function Feed(){
             },
         })
         usr = await usr.json()
-        var divlist = document.createElement('li')
-        usr.data.map((qsn, index)=>{
-            var z = document.createTextNode(qsn['title']); // is a node
-            divlist.appendChild(z)
-        })
+        var divlist = document.createElement('ul')
+        for (i = 0; i < data.length; i++) {
+            let li = document.createElement('li');
+            li.innerText = data[i];
+            divlist.appendChild(li);
+        }
         setlst(
             <div 
             style={{

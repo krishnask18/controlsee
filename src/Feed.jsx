@@ -13,11 +13,19 @@ function Feed(){
         })
         usr = await usr.json()
         setlst(
-            usr.data.map((qsn, index)=>{
-                <div>
-                    {qsn['title']}
-                </div>
-            })
+            <div
+            style={{
+                background:"red"
+            }}>
+                {
+                usr.data.map((qsn, index)=>{
+                    <div>
+                        {/* {qsn['title']} */}
+                        {index}
+                    </div>
+                })
+                }
+            </div>
         )
         console.log(usr.data);
     }

@@ -181,7 +181,7 @@ function Feed(){
             'asdf',
         ]
         divlist = <div className="innerlist">
-            {usr.data.map((item, index) => (
+            {dta.map((item, index) => (
         <div className="tile">{item} at {index}</div>
         ))} 
         </div>

@@ -3,9 +3,6 @@ import App from "./App";
 
 function Feed(){
     var divlist = <div className="innerlist">
-        {usr.data.map((item) => (
-            <div className="tile">{item['title']}</div>
-        ))} 
     </div>
     const [lst, setlst] = useState(divlist)
     async function loadata(){

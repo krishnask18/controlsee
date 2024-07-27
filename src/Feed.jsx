@@ -13,7 +13,7 @@ function Feed(){
         })
         usr = await usr.json()
         var divlist = document.createElement('ul')
-        for (i = 0; i < usr.data.length; i++) {
+        for (var i = 0; i < usr.data.length; i++) {
             let li = document.createElement('li');
             li.innerText = usr.data[i];
             divlist.appendChild(li);

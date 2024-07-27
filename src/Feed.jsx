@@ -20,13 +20,7 @@ function Feed(){
         ))} 
         </div>
         setlst(
-            <div 
-            className="qlist"
-            >
-                {
-                    divlist
-                }
-            </div>
+                divlist
         )
         usr.data.map((q, i)=>{console.log(q['title']);})
     }

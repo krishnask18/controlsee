@@ -209,9 +209,10 @@
   color: #8cb89b; */
 }
 
-.qlist {
+.innerlist {
   left: 270px;
   right: 0px;
-  height: 100%;
+  top: 65px;
+  bottom: 0px;
   background: #2c3e32;
 }

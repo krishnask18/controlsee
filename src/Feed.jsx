@@ -2,7 +2,12 @@ import React, { useEffect, useState } from "react";
 import App from "./App";
 
 function Feed(){
-    const [lst, setlst] = useState('asdf')
+    var divlist = <div className="innerlist">
+        {usr.data.map((item) => (
+            <div className="tile">{item['title']}</div>
+        ))} 
+    </div>
+    const [lst, setlst] = useState(divlist)
     async function loadata(){
         var usr = await fetch('https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/feed', {
             method : 'GET',
@@ -12,10 +17,10 @@ function Feed(){
             },
         })
         usr = await usr.json()
-        var divlist = <div className="innerlist">
+        divlist = <div className="innerlist">
             {usr.data.map((item) => (
-            <div className="tile">{item['title']}</div>
-            ))} 
+        <div className="tile">{item['title']}</div>
+        ))} 
         </div>
         setlst(
             <div 

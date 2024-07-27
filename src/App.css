@@ -111,14 +111,17 @@
   bottom: 0px;
   /* background: #1b211f; */
   background: linear-gradient(to bottom, #1b211f, #202422);
+  z-index: 1;
 }
 
 .list {
   position: relative;
   top: 2.5px;
+  z-index: 1;
 }
 
 .li {
+  z-index: 1;
   height: 45px;
   border-radius: 7px;
   width: 260px;

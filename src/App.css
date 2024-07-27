@@ -219,10 +219,10 @@
 
 .qlist {
   position: absolute;
-  width: 600px;
-  left: 270px;
+  /* width: 600px; */
+  left: 275px;
   right: 0px;
   top: 65px;
   bottom: 0px;
-  background: #2c3e32;
+  background: #293934;
 }

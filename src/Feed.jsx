@@ -13,9 +13,9 @@ function Feed(){
         })
         usr = await usr.json()
         var divlist = document.createElement('ul')
-        for (i = 0; i < data.length; i++) {
+        for (i = 0; i < usr.data.length; i++) {
             let li = document.createElement('li');
-            li.innerText = data[i];
+            li.innerText = usr.data[i];
             divlist.appendChild(li);
         }
         setlst(

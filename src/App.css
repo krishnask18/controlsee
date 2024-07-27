@@ -213,10 +213,10 @@
   position: absolute;
   /* left: 5px; */
   left: 275px;
-  right: 275px;
+  right: 5px;
   top: 5px;
   bottom: 5px;
-  background: rgba(215, 255, 235, 0.3);
+  background: rgba(215, 255, 235, 0.1);
   border-radius: 7px;
 }
 

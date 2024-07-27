@@ -232,3 +232,9 @@
   border-radius: 7px;
   /* background: #293934; */
 }
+
+.tile{
+  height: 40px;
+  border-radius: 7px;
+  background-color: #1a9660;
+}

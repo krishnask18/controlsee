@@ -17,17 +17,18 @@ function Feed(){
             style={{
                 background:"red"
             }}>
+                HELLO HELLO
                 {
-                usr.data.map((qsn, index)=>{
-                    <div>
-                        {/* {qsn['title']} */}
-                        {index}
-                    </div>
-                })
+                // usr.data.map((qsn, index)=>{
+                //     <div>
+                //         {/* {qsn['title']} */}
+                //         {index}
+                //     </div>
+                // })
                 }
             </div>
         )
-        console.log(usr.data);
+        usr.data.map((q, i)=>{console.log(q);})
     }
     // window.onload=()=>{
     //     console.log("feed here");

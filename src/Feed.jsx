@@ -2,7 +2,11 @@ import React, { useEffect, useState } from "react";
 import App from "./App";
 
 function Feed(){
-    var divlist = <div className="innerlist">
+    var divlist = <div className="qlist">
+        <div
+        className="innerlist">
+
+        </div>
     </div>
     const [lst, setlst] = useState(divlist)
     async function loadata(){

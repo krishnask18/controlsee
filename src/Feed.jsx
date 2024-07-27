@@ -12,16 +12,15 @@ function Feed(){
             },
         })
         usr = await usr.json()
-        var divlist = <div>
+        var divlist = <div className="innerlist">
             {usr.data.map((item) => (
-            <div >{item['title']}</div>
+            <div className="tile">{item['title']}</div>
             ))} 
         </div>
         setlst(
             <div 
-            style={{
-                background:"red"
-            }}>
+            className="qlist"
+            >
                 {
                     divlist
                 }

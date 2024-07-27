@@ -210,7 +210,7 @@
 }
 
 .innerlist {
-  position: relative;
+  position: absolute;
   /* left: 5px; */
   left: 275px;
   right: 275px;

@@ -13,7 +13,7 @@ function Feed(){
         })
         usr = await usr.json()
         setlst("done")
-        console.log(usr);
+        console.log(usr.data);
     }
     // window.onload=()=>{
     //     console.log("feed here");

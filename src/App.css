@@ -219,7 +219,7 @@
 
 .qlist {
   position: absolute;
-  /* width: 600px; */
+  width: 100%;
   left: 275px;
   right: 0px;
   top: 65px;

@@ -12,7 +12,13 @@ function Feed(){
             },
         })
         usr = await usr.json()
-        setlst("done")
+        setlst(
+            usr.data.map((qsn, index)=>{
+                <div>
+                    {qsn['title']}
+                </div>
+            })
+        )
         console.log(usr.data);
     }
     // window.onload=()=>{

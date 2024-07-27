@@ -182,7 +182,9 @@ function Feed(){
         ]
         divlist = <div className="innerlist">
             {dta.map((item, index) => (
-        <div className="tile" style={{height:"30px", background:"yellow"}}>{item} at {index}</div>
+        <div className="tile" 
+        // style={{height:"30px", background:"yellow"}}
+        >{item} at {index}</div>
         ))} 
         </div>
         setlst(

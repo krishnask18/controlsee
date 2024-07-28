@@ -60,10 +60,11 @@ function Ask(){
             credentials : 'include',
             mode : 'cors',
         })
-        usr = await usr.json()
+        usr = await usr.json() 
         try {
             const email = usr['email']
             data['email'] = email
+            var x = email[0]
             var resp = await fetch("https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/ques", {
                 headers: {
                   'Accept': 'application/json',
@@ -73,12 +74,12 @@ function Ask(){
                 // mode:'no-cors',
                 body: JSON.stringify(data)
             })
+            cookies.remove('title')
+            cookies.remove('desc')
+            cookies.remove('code')
         } catch(e) {
             window.location.href = 'https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app?rqst='+encodeURIComponent(window.location.href) // window.location.href
         }
-        cookies.remove('title')
-        cookies.remove('desc')
-        cookies.remove('code')
         window.location.href = window.location.href
     }
     

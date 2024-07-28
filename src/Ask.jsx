@@ -62,7 +62,7 @@ function Ask(){
         })
         usr = await usr.json() 
         const email = usr['email']
-        if(email) {
+        if(email != undefined) {
             data['email'] = email
             var resp = await fetch("https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/ques", {
                 headers: {
@@ -79,7 +79,7 @@ function Ask(){
         } else {
             window.location.href = 'https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app?rqst='+encodeURIComponent(window.location.href) // window.location.href
         }
-        window.location.href = window.location.href
+        // window.location.href = window.location.href
     }
     
     return(

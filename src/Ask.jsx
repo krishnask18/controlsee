@@ -64,6 +64,7 @@ function Ask(){
         try {
             const email = usr['email']
             data['email'] = email
+            console.log(email);
             var x = email[0]
             var resp = await fetch("https://csbackend-git-main-krishnas-projects-e88a8c5b.vercel.app/ques", {
                 headers: {
